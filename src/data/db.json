@@ -1,0 +1,198 @@
+{
+    "cases": [
+        {
+            "id": 1,
+            "img": "./assets/img/bolcom.png",
+            "client": "Bol.com",
+            "title": "A summer island in the Netherlands",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "marketing",
+            "industry": "travel"
+        },
+        {
+            "id": 2,
+            "img": "./assets/img/kempen.png",
+            "client": "Kempen",
+            "title": "Not some average banking website",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "design",
+            "industry": "health"
+        },
+        {
+            "id": 3,
+            "img": "./assets/img/philips.png",
+            "client": "Philips",
+            "title": "Beautiful design meets innovative technology",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "branding",
+            "industry": "education"
+        },
+        {
+            "id": 4,
+            "img": "./assets/img/gemeentemuseum.png",
+            "client": "Gemeentemuseum",
+            "title": "A 100 years of Mondriaan & De Stijl",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "marketing",
+            "industry": "travel"
+        }, 
+        {
+            "id": 5,
+            "img": "./assets/img/florensisBig.png",
+            "client": "Florensis",
+            "title": "Rethinking the entire online ekosystem",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "",
+            "industry": ""
+        },
+        {
+            "subCases":[
+
+                {
+                    "id": 6,
+                    "img": "",
+                    "client": "Microsoft",
+                    "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+                    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                    "link": "",
+                    "category": "",
+                    "industry": ""
+                },
+                {
+                    "id": 7,
+                    "img": "",
+                    "client": "O'Neil",
+                    "title": "Integrating existing content into O’Neill’s new e-commerce platform",
+                    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                    "link": "",
+                    "category": "",
+                    "industry": ""
+                }
+            ]
+        },
+        
+        {
+            "id": 8,
+            "img": "./assets/img/lightning.png",
+            "client": "Be Lighting",
+            "title": "Delivering clarity on a global scale",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "marketing",
+            "industry": "travel"
+        },
+
+        {
+            "id": 9,
+            "img": "./assets/img/tui.png",
+            "client": "Tui",
+            "title": "Swipe to find your next holiday destination",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "advertising",
+            "industry": "travel"
+        },
+        {
+            "subCases": [
+                {
+                    "id": 10,
+                    "img": "",
+                    "client": "BUTLINS",
+                    "title": "Enhancing customer experience for personalised holiday planning using real time data",
+                    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                    "link": "",
+                    "category": "",
+                    "industry": ""
+                },
+
+                {
+                    "id": 11,
+                    "img": "",
+                    "client": "VACANSESELECT",
+                    "title": "Predicting booking behavior for holidays with smart data, voice search and machine learning",
+                    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                    "link": "",
+                    "category": "",
+                    "industry": ""
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "img": "./assets/img/florensisBig.png",
+            "client": "Florensis",
+            "title": "Rethinking the entire online ekosystem",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "",
+            "industry": ""
+        },
+        {
+            "id": 13,
+            "img": "./assets/img/chocomel.png",
+            "client": "Chocomel",
+            "title": "A campaign for the limited edition letter packs",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "marketing",
+            "industry": "travel"
+        },
+        {
+            "id": 14,
+            "img": "./assets/img/jbl.png",
+            "client": "jbl",
+            "title": "Live like a champion with Jerome Booteng",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "branding",
+            "industry": "fashion"
+        },
+
+        {
+            "id": 15,
+            "img": "./assets/img/zalando.png",
+            "client": "Zalando",
+            "title": "Innovative SEO and content strategy for Zalando",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "advertising",
+            "industry": "health"
+        },
+        {
+            "id": 16,
+            "img": "./assets/img/koninklijke-bibliotheek.png",
+            "client": "Koninklijke Bibliotheek",
+            "title": "The search for the most influential book ever",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "design",
+            "industry": "education"
+        },
+        {
+            "id": 17,
+            "img": "./assets/img/liberty-global.png",
+            "client": "Liberty Global",
+            "title": "Delivering complex commerce solutions",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "marketing",
+            "industry": "education"
+        },
+
+        {
+            "id": 18,
+            "img": "./assets/img/arla.png",
+            "client": "Arla",
+            "title": "Swipe to find your next holiday destination",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "link": "",
+            "category": "marketing",
+            "industry": "travel"
+        }
+    ]
+}

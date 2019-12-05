@@ -1,0 +1,434 @@
+@import "~animate.css/animate.css";
+@import 'assets/css/variables.less';
+
+@font-face {
+  font-family: 'tekolight';
+  src: url('assets/fonts/teko-light-webfont.woff2') format('woff2'),
+    url('assets/fonts/teko-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'tekomedium';
+  src: url('assets/fonts/teko-medium-webfont.woff2') format('woff2'),
+    url('assets/fonts/teko-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'tekoregular';
+  src: url('assets/fonts/teko-regular-webfont.woff2') format('woff2'),
+    url('assets/fonts/teko-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'tekosemibold';
+  src: url('assets/fonts/teko-semibold-webfont.woff2') format('woff2'),
+    url('assets/fonts/teko-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+
+  @media @mobileLdown {
+    font-size: 15px;
+  }
+}
+
+body {
+  font-family: 'tekoregular', sans-serif;
+  min-height: 100vh;
+  font-size: 17px;
+  overflow-x: hidden;
+
+  &.menuOpen {
+    overflow: hidden;
+  }
+
+  .pr0 {
+    padding-right: 0 !important;
+  }
+
+  @media @desktopLup {
+    .pl40 {
+      padding-left: 40px !Important;
+    }
+
+    .pr40 {
+      padding-right: 40px !Important;
+    }
+  }
+
+  @media @mobileLdown {
+    .ms {
+      margin-bottom: 60px !Important;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+  .btn {
+    width: 170px;
+    height: 50px;
+    font-family: Arial;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+
+  button:focus {
+    outline: none;
+
+  }
+
+
+  main {
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+
+    section#fullWork {
+      height: 100vh;
+      background: url(assets/img/florensis.png) no-repeat;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+  
+      @media @mobileLdownP {
+        margin-top: 78px;
+        height: calc(100vh - 78px);
+        background-size: auto calc(100vh - 78px - 95px);
+        background-attachment: inherit;
+        background-position: top right -95px;
+      }
+  
+      @media @mobileLdownL {
+        background-size: cover;
+      }
+  
+      @media @tabletUp {
+        background-position: right -180px top 0px;
+        background-size: cover;
+      }
+  
+      @media @desktopUp {
+        background-position: right -100px top 0;
+      }
+  
+      @media @desktopLup {
+        background-position: center top 0;
+        background-size: cover;
+      }
+  
+      .container {
+        position: relative;
+        height: 100%;
+  
+        h1 {
+          margin: 0;
+          text-transform: uppercase;
+          line-height: 1;
+          color: @txtblack;
+          padding-top: 24vh;
+          text-shadow: 0 2px 0 #0c2ffb, 0 2px 0 #2cfcfd, 0 -2px 0 #fb203b, 1px 0px 0 #fefc4b;
+  
+  
+  
+          @media @mobileLdownL {
+            font-size: 15rem;
+          }
+  
+          @media @mobileLand {
+            font-size: 12rem;
+          }
+  
+          @media @mobileLdownP {
+            font-size: 10rem;
+          }
+  
+          @media @tabletUp {
+            font-size: 15rem;
+          }
+  
+          @media @desktopUp {
+            font-size: 19rem;
+          }
+  
+          @media @desktopLup {
+            font-size: 24rem;
+          }
+        }
+  
+        .btn-black {
+          background-color: @txtblack;
+          position: absolute;
+          bottom: 10vh;
+          right: 0;
+          -webkit-transition: padding-right .3s ease-in-out;
+          transition: padding-right .3s ease-in-out;
+  
+          &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 40px;
+            width: 22px;
+            height: 22px;
+            background: url(assets/img/arrow-forward.svg) no-repeat;
+            opacity: 0;
+            -webkit-transition: opacity .3s ease-in-out, right .3s ease-in-out;
+            transition: opacity .3s ease-in-out, right .3s ease-in-out;
+          }
+  
+          &:hover {
+            color: #fff;
+            padding-right: 30px;
+  
+            &:after {
+              opacity: 1;
+              right: 20px;
+            }
+          }
+  
+          @media @mobileLand {
+            right: 15px;
+          }
+  
+          @media @mobileLdownP {
+            bottom: 25px;
+            width: calc(100% - 30px);
+            left: 15px;
+          }
+        }
+  
+      }
+    }
+  
+    section#testimonials {
+
+      margin-bottom: 80px;
+
+      @media @mobileLdown {
+        padding: 40px 0;
+      }
+
+      #testimonialSl {
+        border-top: 1px solid #cdcdcd;
+        padding-top: 80px;
+  
+        @media @mobileLdown {
+          padding-top: 40px;
+        }
+  
+        .testimonial {
+          margin: 0 auto;
+          color: #272727;
+  
+          @media @tabletUp {
+            max-width: 80%;
+          }
+  
+          @media @desktopUp {
+            max-width: 62%;
+          }
+  
+          h3 {
+            font-size: 2.1rem;
+            line-height: 1.28;
+            margin-bottom: 30px;
+  
+            @media @mobileLdown {
+              font-size: 1.65rem;
+              margin-bottom: 20px;
+            }
+          }
+  
+          span {
+            display: block;
+            font-family: Arial;
+            font-size: 0.76rem;
+            font-weight: bold;
+            line-height: 2.31;
+  
+            @media @mobileLdown {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+    
+
+    section#clients {
+      background: #f3f6f6;
+      text-align: center;
+      padding: 60px 0;
+
+      @media @mobileLdown {
+        padding: 40px 0;
+      }
+
+      h3 {
+        font-size: 3.53rem;
+        line-height: 1;
+        color: @txtblack;
+        text-transform: uppercase;
+
+        @media @mobileLdown {
+          font-size: 3rem;
+        }
+      }
+
+      p {
+        font-family: Arial;
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 50%;
+        margin: 20px auto 80px;
+
+        @media @tablet {
+          max-width: 80%;
+        }
+
+        @media @mobileLdown {
+          max-width: 100%;
+          margin: 20px auto 40px;
+        }
+      }
+
+      .clientsList {
+        a {
+          transition: transform .2s linear;
+          -webkit-transition: transform .2s linear;
+          position: relative;
+          display: block;
+          transform: scale(1);
+          min-height: 140px;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+
+          img {
+            max-width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            @media @tablet {
+              // max-width: 27vw;
+            }
+          }
+
+        }
+      }
+    }
+
+    section#contact {
+      padding: 80px 0;
+
+      @media @mobileLdown {
+        padding: 40px 25px;
+      }
+
+      h2 {
+        font-size: 3.53rem;
+        line-height: 1;
+        color: @txtblack;
+
+        @media @tabletDown {
+          text-align: center;
+          margin-bottom: 80px;
+        }
+
+        @media @mobileLdown {
+          font-size: 2em;
+        }
+
+        br {
+          @media @tabletDown {
+            display: none;
+          }
+        }
+      }
+
+      .contact {
+
+        .form-group {
+          margin-bottom: 60px;
+
+          @media @mobileLdown {
+            margin-bottom: 30px;
+          }
+
+          label {
+            font-family: Arial;
+            font-size: 0.9rem;
+            font-weight: bold;
+            line-height: 2;
+            color: #272727;
+            text-transform: uppercase;
+          }
+
+          .form-control {
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #cdcdcd;
+            font-family: Arial;
+            font-size: 0.9rem;
+
+          }
+        }
+      }
+
+      .btn.btn-blue {
+        background: @btnblue;
+        width: 140px;
+        
+        -webkit-transition: background-color .4s;
+        transition: background-color .4s;
+
+        &:hover {
+          color: white;
+          background: darken(@btnblue, 20%);
+        }
+      }
+    }
+  }
+
+  
+}
+
+.align-items-end {
+  @media @mobileLdown {
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+}

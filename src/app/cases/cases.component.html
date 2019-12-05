@@ -1,0 +1,148 @@
+<section id="workCases">
+    <div class="container">
+        <div class="btn-group gridToggleBox float-left">
+            <button class="btn btn-grid" type="button"
+                (click)="onDisplayModeChange('grid')"
+                [ngClass]="{'active': displayMode === 'grid'}">
+                <i class="icon ion-md-apps"></i>
+            </button>
+            <button class="btn btn-grid" type="button"
+                (click)="onDisplayModeChange('list')"
+                [ngClass]="{'active': displayMode === 'list'}">
+                <i class="icon ion-ios-list"></i>
+            </button>
+        </div>
+        <div class="filterBox float-right">
+            <div class="form-group">
+                <label for="categories">Show me</label>
+                <div class="selectWrap">
+                    <span>all work</span>
+                    <select class="form-control" id="categories"
+                        [(ngModel)]="selected"
+                        (ngModelChange)="onCategorySelect(selected)"
+                        (change)="onChange($event.target)">
+                        <option *ngFor="let category of categoryOptions"
+                            [value]="category">
+                            {{ category }}
+                        </option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="industries">in</label>
+                <div class="selectWrap">
+                    <span>all industries</span>
+                    <select class="form-control" id="industries"
+                        [(ngModel)]="selected"
+                        (ngModelChange)="onIndustrySelect(selected)"
+                        (change)="onChange($event.target)">
+                        <option *ngFor="let industry of industryOptions"
+                            [value]="industry">
+                            {{ industry }}
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        <div class="casesContainer">
+            <div class="row gridView" *ngIf="displayMode === 'grid'">
+                <div class="col-sm-6" *ngFor='let case of combinedSearch; let
+                    i= index;
+                    let o=
+                    odd; let e= even;'
+                    [ngClass]="{'col-lg-8 imgH': (i == 4 || i == 9), 'col-lg-4
+                    ms eqH': (i == 5 || i == 8),
+                    'pl40': i == 5, 'pr40': i == 8,
+                    'odd': o, 'even': e}">
+                    <div class="caseWrapper wow zoomOutUpAos"
+                        data-wow-duration=".5s"
+                        data-wow-offset="100"
+                        [attr.data-wow-delay]="o ? '.6s' : '.3s'"
+                        *ngIf="i != 5 && i != 8">
+                        <a href="#" (mouseleave)="onCaseLeave($event)">
+                            <div class="imgHolder"
+                                (mouseenter)="onCaseImgHover($event)">
+                                <img src="{{case.img}}" alt="{{case.title}}">
+                            </div>
+                            <div class="caseDsc">
+                                <span class="clientName">{{case.client}}</span>
+                                <h2>{{case.title}}</h2>
+                                <span class="viewCase">view case</span>
+                            </div>
+                        </a>
+                    </div>
+                    <ng-container *ngIf="i == 5 || i == 8">
+                        <div class="caseWrapper noImg wow"
+                            data-wow-duration=".5s"
+                            data-wow-delay=".3s" data-wow-offset="100"
+                            *ngFor='let subcase of case.subCases'
+                            [ngClass]="{'zoomOutLeftAos': i == 5,
+                            'zoomOutRightAos': i == 8}">
+                            <a href="#">
+                                <div class="caseDsc">
+                                    <span class="clientName">{{subcase.client}}</span>
+                                    <h2>{{subcase.title}}</h2>
+                                    <span class="viewCase">view case</span>
+                                </div>
+                            </a>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="row listView" *ngIf="displayMode === 'list'">
+                <div class="col-12" *ngFor='let case of combinedSearch; let
+                    i= index; let o=
+                    odd; let e= even;'
+                    [ngClass]="{}">
+                    <div class="caseWrapper wow zoomOutUpAos"
+                        data-wow-duration=".5s"
+                        data-wow-offset="100"
+                        data-wow-delay="0.5s"
+                        *ngIf="i != 5 && i != 8">
+                        <a href="#">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="imgHolder"
+                                        (mouseenter)="onCaseImgHover($event)">
+                                        <img src="{{case.img}}"
+                                            alt="{{case.title}}">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="caseDsc">
+                                        <span class="clientName">{{case.client}}</span>
+                                        <h2>{{case.title}}</h2>
+                                        <div class='desc d-none d-lg-block'>{{case.desc}}</div>
+                                        <span class="viewCase">view case</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row" *ngIf="i == 5 || i == 8">
+                        <div class="col-md-6 sub" *ngFor='let subcase of
+                            case.subCases; let j = index'>
+                            <div class="caseWrapper noImg wow"
+                                data-wow-duration=".5s"
+                                data-wow-delay=".3s" data-wow-offset="100"
+                                [ngClass]="{'zoomOutRightAos': j == 0,
+                                'zoomOutLeftAos': j == 1}">
+                                <a href="#">
+                                    <div class="caseDsc">
+                                        <span class="clientName">{{subcase.client}}</span>
+                                        <h2>{{subcase.title}}</h2>
+                                        <div class='desc d-none d-lg-block'>{{subcase.desc}}</div>
+                                        <span class="viewCase">view case</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

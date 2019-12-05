@@ -1,0 +1,139 @@
+@import '../../assets/css/variables.less';
+
+footer {
+    background: @txtblack;
+    padding: 80px 0;
+    opacity: 1;
+    
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+
+    @media @mobileLdown {
+      padding: 40px 0;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 0;
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+
+        @media @mobileLdown {
+          display: block;
+        }
+      }
+    }
+
+    .footerNav {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #3f3f3f;
+      margin-bottom: 60px;
+
+      @media @mobileLdown {
+        margin-bottom: 40px;
+      }
+
+      .navbar-brand {
+        padding: 0;
+
+        svg {
+          fill: #fff;
+          width: 100px;
+          height: 33px;
+        }
+      }
+
+      .footerMenu {
+        a {
+          font-size: 1.06rem;
+          color: #fff;
+          padding-right: 30px;
+          text-transform: uppercase;
+          line-height: 1;
+          vertical-align: bottom;
+
+          @media @mobileLdown {
+            display: block;
+            font-size: 2.1rem;
+            padding: 10px 0;
+          }
+
+          &:hover {
+            text-decoration: underline !Important;
+          }
+        }
+      }
+
+      .footerSocial {
+        text-align: right;
+
+        a {
+          padding-left: 25px;
+          height: 27px;
+          display: block;
+          position: relative;
+          transform: scale(1);
+          -webkit-transition: transform 0.2s linear;
+          transition: transform 0.2s linear;
+
+          @media @tablet {
+            padding-left: 15px;
+          }
+
+          @media @mobileLdown {
+            height: auto;
+          }
+
+          &:hover {
+            transform: scale(1.2);
+          }
+
+          svg {
+            fill: #fff;
+            height: 15px;
+            width: auto;
+
+            @media @mobileLdown {
+              height: 25px;
+              margin: 15px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .footerInfo {
+      font-family: Arial;
+      font-size: 0.76rem;
+      color: #808080;
+      line-height: 1;
+
+      span,
+      a {
+        padding-right: 25px;
+        color: #808080;
+
+        @media @tablet {
+          padding-right: 10px;
+        }
+
+        @media @mobileLdown {
+          padding-bottom: 10px;
+          display: block;
+        }
+      }
+
+      span.float-right {
+        @media @mobileLdown {
+          float: none !important;
+          margin-top: 30px;
+        }
+      }
+
+      a:hover {
+        text-decoration: underline !Important;
+      }
+    }
+  }

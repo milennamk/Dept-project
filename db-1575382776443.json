@@ -1,0 +1,44 @@
+{
+  "cases": [
+    {
+      "id": 1,
+      "img": "./assets/img/bolcom.png",
+      "client": "Bol.com",
+      "title": "A summer island in the Netherlands",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "link": "",
+      "group": "marketing",
+      "industry": "travel"
+    },
+    {
+      "id": 2,
+      "img": "./assets/img/kempen.png",
+      "client": "Kempen",
+      "title": "Not some average banking website",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "link": "",
+      "group": "marketing",
+      "industry": "travel"
+    },
+    {
+      "id": 3,
+      "img": "./assets/img/bolcom.png",
+      "client": "Bol.com",
+      "title": "A summer island in the Netherlands",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "link": "",
+      "group": "marketing",
+      "industry": "travel"
+    },
+    {
+      "id": 4,
+      "img": "./assets/img/bolcom.png",
+      "client": "Bol.com",
+      "title": "A summer island in the Netherlands",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "link": "",
+      "group": "marketing",
+      "industry": "travel"
+    }
+  ]
+}
